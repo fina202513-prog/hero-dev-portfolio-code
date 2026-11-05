@@ -3,28 +3,378 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taher Md Hasibul Portfolio</title>
+    <title>Taher Md Hasibul Alam | Web Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Taher Md Hasibul Alam - Web Developer & Global IT Student at Forum Information Academy in Niigata, Japan. Specializing in Frontend and Backend Development.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23FD6E0A'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' fill='white' font-size='60' font-family='sans-serif' font-weight='bold'>T</text></svg>">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="../hero-dev-code/styles/portfolio.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6.5.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/portfolio.css">
 </head>
 
 <body class="font-open-sans">
-    <header>
+    <!-- Header Section -->
+    <header class="header">
         <nav>
-            <div class="logo">
-                <h2> Ta<span class="color-orange">h</span>er</h2>
-            </div>
+            <a href="#" class="logo-link" aria-label="Taher Portfolio Home">
+                <div class="logo">
+                    <h2>Ta<span class="color-orange">h</span>er</h2>
+                </div>
+            </a>
 
-            <ul class="menu">
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Blog</a></li>
-                <li><button class="btn"> Hire Me </button></li>
+            <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+            </button>
+
+            <ul class="menu" id="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="btn-primary btn-nav">Hire Me</a></li>
             </ul>
         </nav>
+
+        <section id="banner" class="banner">
+            <div class="banner-content">
+                <h4 class="banner-greetings">Hi, I am</h4>
+                <h1 class="banner-title">Taher Md Hasibul Alam</h1>
+                <p class="banner-description">
+                    Aspiring IT Engineer & Web Developer studying Global IT at Forum Information Academy. Experienced in full-stack web development (HTML, CSS, JavaScript, Python) and proven team leadership.
+                </p>
+                <div class="banner-buttons">
+                    <a href="cv.pdf" download="Taher_Md_Hasibul_Alam_CV.pdf" class="btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                        Download CV
+                    </a>
+                    <a href="#contact" class="btn-contact">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+            <div class="banner-image">
+                <img src="images/taher_cutout.png" alt="Taher Md Hasibul Alam - Web Developer">
+            </div>
+        </section>
     </header>
-    
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- About Me Section -->
+        <section id="about" class="about">
+            <h3 class="section-title">About Me</h3>
+            <p class="section-description">
+                I am an enthusiastic IT student currently studying Information Software and Global IT at Forum Information Academy in Niigata, Japan. With a solid foundation in HTML, CSS, JavaScript, and Python, I enjoy developing responsive frontend interfaces and reliable backend systems. Having developed full-stack team projects including an E-Commerce web application and led night shift operations at Sukiya, I combine technical discipline, collaborative teamwork, and strong problem-solving skills. I am dedicated to continuously enhancing both my software engineering capabilities and Japanese language proficiency to make lasting contributions to the IT industry.
+            </p>
+            <div class="about-info-container">
+                <div class="about-info">
+                    <h4 class="info-title">Name:</h4>
+                    <p class="info-description">Taher Md Hasibul Alam</p>
+                </div>
+                <div class="about-info">
+                    <h4 class="info-title">Email:</h4>
+                    <p class="info-description">
+                        <a href="mailto:fina202513@st.forum.ac.jp" class="info-link">fina202513@st.forum.ac.jp</a>
+                    </p>
+                </div>
+                <div class="about-info">
+                    <h4 class="info-title">Phone:</h4>
+                    <p class="info-description">
+                        <a href="tel:07074302217" class="info-link">070-7430-2217</a>
+                    </p>
+                </div>
+                <div class="about-info">
+                    <h4 class="info-title">Date of birth:</h4>
+                    <p class="info-description">13 September 2002</p>
+                </div>
+                <div class="about-info">
+                    <h4 class="info-title">From:</h4>
+                    <p class="info-description">Niigata, Japan</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- What I Do Section -->
+        <section id="skills" class="skills-section">
+            <h3 class="section-title">What I do</h3>
+            <p class="section-description">
+                Currently focusing on Web Engineering, Backend Services, and Software Development. Below is an overview of my core technical stack, development experience, and key competencies.
+            </p>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <div class="skill-icon-wrap">
+                        <img src="images/icons/js.png" alt="Frontend & JavaScript">
+                    </div>
+                    <h4 class="skill-title">Frontend Development</h4>
+                    <p class="skill-description">
+                        Building responsive, accessible web pages using modern HTML5, clean CSS3 layouts, and dynamic client-side interactions with Vanilla JavaScript.
+                    </p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon-wrap">
+                        <img src="images/icons/nodejs.png" alt="Backend & Python">
+                    </div>
+                    <h4 class="skill-title">Backend & Python</h4>
+                    <p class="skill-description">
+                        Developing backend services, API endpoints, and business logic using Python and JavaScript. Experienced in server-side development for team EC site projects.
+                    </p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon-wrap">
+                        <img src="images/icons/mongo.png" alt="Databases & Architecture">
+                    </div>
+                    <h4 class="skill-title">Databases & Architecture</h4>
+                    <p class="skill-description">
+                        Structuring relational and document databases, handling data validation, server connections, and managing version control workflows with Git & GitHub.
+                    </p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon-wrap">
+                        <svg width="44" height="44" viewBox="0 0 24 24" fill="#FD6E0A"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                    </div>
+                    <h4 class="skill-title">Leadership & Languages</h4>
+                    <p class="skill-description">
+                        Experienced in directing teams of 3–4 members at Sukiya. Effective cross-cultural collaboration in Japanese (JLPT N4 certified, preparing for N2) and English.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume-section">
+            <h3 class="section-title">A Summary of My Resume</h3>
+            
+            <div class="resume-container">
+                <!-- Education Column -->
+                <div class="resume-column">
+                    <h3 class="resume-column-title">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#FD6E0A"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+                        My Education
+                    </h3>
+
+                    <div class="resume-item">
+                        <h4 class="experience-title">Global IT Course (Information Software)</h4>
+                        <h5 class="experience-sub-title">Forum Information Academy / 2025 - 2027 (Expected)</h5>
+                        <p class="experience-description">
+                            Comprehensive study of software engineering, web application development (HTML, CSS, JavaScript, Python), database systems, and IT project practices in Japan.
+                        </p>
+                    </div>
+                    <hr>
+
+                    <div class="resume-item">
+                        <h4 class="experience-title">Business Liberal Arts Department</h4>
+                        <h5 class="experience-sub-title">NBC Niigata Business College / 2024 - 2025</h5>
+                        <p class="experience-description">
+                            Graduated with focus on Japanese corporate business etiquette, commercial communication, organizational teamwork, and professional service fundamentals.
+                        </p>
+                    </div>
+                    <hr>
+
+                    <div class="resume-item">
+                        <h4 class="experience-title">Japanese Language Program</h4>
+                        <h5 class="experience-sub-title">Kyoshin Language Academy Kobe / 2022 - 2024</h5>
+                        <p class="experience-description">
+                            Completed two years of intensive Japanese language studies, achieving proficiency in conversation, reading, and business fundamentals (JLPT certification).
+                        </p>
+                    </div>
+                    <hr>
+
+                    <div class="resume-item">
+                        <h4 class="experience-title">Higher Secondary Education</h4>
+                        <h5 class="experience-sub-title">Cumilla Govt. City College / 2018 - 2020</h5>
+                        <p class="experience-description">
+                            Completed college education in Bangladesh with solid foundation in mathematics, analytical thinking, and academic coursework.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Experience Column -->
+                <div class="resume-column">
+                    <h3 class="resume-column-title">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#FD6E0A"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+                        My Experience & Projects
+                    </h3>
+
+                    <div class="resume-item">
+                        <h4 class="experience-title">Shift Leader / Team Coordinator</h4>
+                        <h5 class="experience-sub-title">SUKIYA / Apr 2023 - Present</h5>
+                        <p class="experience-description">
+                            Directing and leading a 3–4 member team during night shifts (22:00 – 05:00). Ensuring smooth operations, efficient task delegation, conflict resolution, and quality standards under high pressure.
+                        </p>
+                    </div>
+                    <hr>
+
+                    <div class="resume-item">
+                        <h4 class="experience-title">Backend Developer (Team Project)</h4>
+                        <h5 class="experience-sub-title">E-Commerce Web Application / 2024 - 2025</h5>
+                        <p class="experience-description">
+                            Collaborated in a development team to design and build an EC platform. Responsible for backend programming, database structuring, API development, and testing.
+                        </p>
+                    </div>
+                    <hr>
+
+                    <div class="resume-item">
+                        <h4 class="experience-title">Japanese Language Proficiency (JLPT N4)</h4>
+                        <h5 class="experience-sub-title">Certified / Aug 2024 (Active JLPT N2 Candidate)</h5>
+                        <p class="experience-description">
+                            Passed JLPT N4 exam; continuing dedicated daily study aiming for JLPT N2. Confident in day-to-day workplace Japanese communication and documentation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="download-cv-btn-container">
+                <a href="cv.pdf" download="Taher_Md_Hasibul_Alam_CV.pdf" class="btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                    Download CV (PDF)
+                </a>
+                <a href="cv.html" target="_blank" class="btn-contact">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                    View CV Online
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contact" class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 class="footer-title">Let's Connect</h3>
+                <p class="footer-description">
+                    Feel free to get in touch for software engineering opportunities, collaborative web development projects, or general inquiries.
+                </p>
+                <div class="footer-contact-list">
+                    <a href="mailto:fina202513@st.forum.ac.jp" class="footer-contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#FD6E0A"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        fina202513@st.forum.ac.jp
+                    </a>
+                    <a href="tel:07074302217" class="footer-contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#FD6E0A"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                        070-7430-2217
+                    </a>
+                    <div class="footer-contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="#FD6E0A"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        Niigata City, Niigata, Japan
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:fina202513@st.forum.ac.jp" class="social-btn" title="Send Email" aria-label="Send Email">
+                        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    </a>
+                    <a href="https://github.com/fina202513-prog" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Profile" aria-label="GitHub Profile">
+                        <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile" aria-label="LinkedIn Profile">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-column contact-form">
+                <h3 class="footer-title">Send a Message</h3>
+                <form id="contact-form" action="mailto:fina202513@st.forum.ac.jp" method="POST" enctype="text/plain">
+                    <input type="text" id="form-name" name="name" placeholder="Your name" required aria-label="Your name">
+                    <input type="email" id="form-email" name="email" placeholder="Your email" required aria-label="Your email">
+                    <textarea rows="5" id="form-message" name="message" placeholder="Message" required aria-label="Message"></textarea>
+                    <button class="btn-primary" type="submit">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                        Send Message
+                    </button>
+                    <div class="form-feedback" id="form-feedback"></div>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Taher Md Hasibul Alam. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></svg>
+    </button>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        // Mobile Navigation Toggle
+        const menuToggle = document.getElementById('mobile-menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        if (menuToggle && navMenu) {
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('open');
+                const isOpen = navMenu.classList.contains('open');
+                menuToggle.setAttribute('aria-expanded', isOpen);
+                menuToggle.innerHTML = isOpen 
+                    ? '<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>'
+                    : '<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>';
+            });
+
+            // Close menu when clicking on any menu link
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navMenu.classList.contains('open')) {
+                        navMenu.classList.remove('open');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                        menuToggle.innerHTML = '<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>';
+                    }
+                });
+            });
+        }
+
+        // Back to top floating button
+        const backToTopBtn = document.getElementById('back-to-top');
+        if (backToTopBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTopBtn.classList.add('show');
+                } else {
+                    backToTopBtn.classList.remove('show');
+                }
+            });
+
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        // Contact Form Submission Handler
+        const contactForm = document.getElementById('contact-form');
+        const formFeedback = document.getElementById('form-feedback');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                const name = document.getElementById('form-name').value.trim();
+                const email = document.getElementById('form-email').value.trim();
+                const message = document.getElementById('form-message').value.trim();
+
+                if (!name || !email || !message) return;
+
+                // Build mailto query
+                const subject = encodeURIComponent(`Portfolio Inquiry from ${name}`);
+                const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+                const mailtoUrl = `mailto:fina202513@st.forum.ac.jp?subject=${subject}&body=${body}`;
+
+                // Show success feedback
+                if (formFeedback) {
+                    formFeedback.textContent = "Thank you! Launching your email app to send message...";
+                    formFeedback.className = "form-feedback success";
+                }
+
+                // Launch mail client
+                setTimeout(() => {
+                    window.location.href = mailtoUrl;
+                }, 400);
+            });
+        }
+    </script>
 </body>
 </html>
