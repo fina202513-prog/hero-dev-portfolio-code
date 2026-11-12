@@ -828,7 +828,12 @@ footer.footer {
 }
 
 @media (max-width: 992px) {
-    nav, .banner, .main-container, .footer-container, .footer-bottom {
+
+    nav,
+    .banner,
+    .main-container,
+    .footer-container,
+    .footer-bottom {
         width: 90%;
     }
 
@@ -861,7 +866,9 @@ footer.footer {
         margin-top: 60px;
     }
 
-    .skills-section, .projects-section, .resume-section {
+    .skills-section,
+    .projects-section,
+    .resume-section {
         margin-top: 60px;
     }
 
